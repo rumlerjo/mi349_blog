@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+</head>
+
+<body style="text-align: center;">
+    <!-- Heading and nav sections that will be site-wide -->
+    <header>
+        <!-- Article title -->
+        <h1>John's Blog</h1>
+    </header>
+
+    <nav>
+        <ul style="list-style: none; text-indent: -40px;">
+            <li style="display: inline;"><a href="index.html" title="John's MI349 Blog">Home</a></li>
+            <li style="display: inline;"><a href="about.html" title="About the Author">About</a></li>
+            <li style="display: inline;"><a href="posts.html" title="Blog Post Listing">Posts</a></li>
+            <li style="display: inline;"><a href="contact.html" title="Blog contact form">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- place a separating line to give the nav a more separated feeling -->
+    <hr>
+
+    <main>
+        <section id="Contact">
+            <form>
+                <h2>Contact us:</h2>
+                <br>
+                <label>Name:
+                    <input type="text">
+                </label>
+                <br>
+                <label>Email:
+                    <input type="email">
+                </label>
+                <br>
+                <label>Reason:
+                    <input list="reason">
+                    <datalist id="reason">
+                        <option value="Saying 'hi'">
+                        <option value="Looking for a contractor">
+                        <option value="Interested in an interview">
+                    </datalist>
+                </label>
+                <br>
+                <label for="comment" style="vertical-align: top;">Comment:</label>
+                <textarea id="comment" name="comment" rows="5" cols="23" style="vertical-align: middle;">Leave us a comment...</textarea>
+                <br>
+                <button>Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
