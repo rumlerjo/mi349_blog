@@ -16,12 +16,10 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html" title="John's MI349 Blog">Home</a></li>
-            <li><a href="about.html" title="About the Author">About</a></li>
-            <li><a href="posts.html" title="Blog Post Listing">Posts</a></li>
-            <li><a href="contact.html" title="Blog contact form">Contact</a></li>
-        </ul>
+        <a href="index.html" title="John's MI349 Blog">Home</a>
+        <a href="about.html" title="About the Author">About</a>
+        <a href="posts.html" title="Blog Post Listing">Posts</a>
+        <a href="contact.html" title="Blog contact form">Contact</a>
     </nav>
 
     <!-- place a separating line to give the nav a more separated feeling -->
@@ -29,22 +27,21 @@
 
     <main>
         <section id="contact">
-            <form>
+            <form id="contact-form">
                 <h2>Contact us:</h2>
-                <ul class="unindent-ul">
-                    <li>
+                    <form-item>
                         <label>Name:
                             <input type="text">
                         </label>
-                    </li>
+                    </form-item>
                     
-                    <li>
+                    <form-item>
                         <label>Email:
                             <input type="email">
                         </label>
-                    </li>
+                    </form-item>
                     
-                    <li>
+                    <form-item>
                         <label>Reason:
                             <input list="reason">
                             <datalist id="reason">
@@ -53,16 +50,16 @@
                                 <option value="Interested in an interview">
                             </datalist>
                         </label>
-                    </li>
+                    </form-item>
                 
-                    <li>
+                    <form-item>
                         <label id="comment-label" for="comment">Comment:</label>
                         <textarea id="comment" name="comment" rows="5" cols="23">Leave us a comment...</textarea>
-                    </li>
+                    </form-item>
                     
-                    <li>
+                    <form-item>
                         <button>Submit</button>
-                    </li>
+                    </form-item>
                 </ul>
             </form>
         </section>
