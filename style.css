@@ -134,3 +134,9 @@ aside h1, h2, h3 {
 #contact-form form-item {
     flex: auto;
 }
+
+@media (max-width: 400px) {
+    body {
+        background: #102a43;
+    }
+}
